@@ -29,8 +29,8 @@ class MyHomePage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final counterState = ref.watch(counterCtrlProvider);
-    final counterController = ref.read(counterCtrlProvider.notifier);
+    final counterState = ref.watch(counterControllerProvider);
+    final counterController = ref.read(counterControllerProvider.notifier);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
